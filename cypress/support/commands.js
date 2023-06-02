@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("requestAndVerify200", (page) => {
+  cy.request(page.prop("href")).then((response) => {
+    expect(response.status).to.eq(200);
+  });
+});

@@ -17,27 +17,27 @@
 1. **Page Loading**
 
    - Verify that the Main Page loads without errors or delays.
-   - Go to https://en.wikipedia.org/wiki/Main_Page
-   - Page should load in a reasonable amount of time with no errors
+     - Go to https://en.wikipedia.org/wiki/Main_Page
+     - Page should load in a reasonable amount of time with no errors
    - Confirm that all page elements (images, text, links) are displayed correctly.
-   - Visit Main Page
-   - Links should load:
-     - Create Account
-     - Log In
-     - Other areas of Wikipedia
-       - Community portal
-       - Village pump
-       - Site news
+     - Visit Main Page
+     - Links should load:
+       - Create Account
+       - Log In
+       - Other areas of Wikipedia
+         - Community portal
+         - Village pump
+         - Site news
+         - etc.
+     - Sections Should Load
+       - Welcome to Wikipedia Main Section
+       - From today's feature article
+       - In the news
+       - Did you know...
+       - On this day
        - etc.
-   - Sections Should Load
-     - Welcome to Wikipedia Main Section
-     - From today's feature article
-     - In the news
-     - Did you know...
-     - On this day
-     - etc.
-   - Images Should Load
-     - All images for each section should load/no broken images
+     - Images Should Load
+       - All images for each section should load/no broken images
 
 2. **Navigation**
 
@@ -92,7 +92,14 @@
 ## 4. Potential App Improvements
 
 1. **User Experience**
+
    - There is a bit of a different experience between mobile and desktop, overall look/feel. You don't have as much functionality/choices between navigation menus, which might be intentional since they do have a mobile app, but it's a little jarring to notice the difference when going between mobile and desktop views.
    - Probably design, but that's kind of hard when you think about what Wikipedia is used for. There's just a lot of information being thrown at you on the main page so it's hard to know where to start if you're just browsing
+
 2. **Element Attributes**
+
    - Would prefer to have more specific element attributes (such as data-test) so it's a bit easier to access them when using Cypress
+
+3. **Automation Improvement(s)**
+
+   - Would add the use of accessibility automation plugin with Cypress and the Lighthouse plugin to run these tests on a full regression.
